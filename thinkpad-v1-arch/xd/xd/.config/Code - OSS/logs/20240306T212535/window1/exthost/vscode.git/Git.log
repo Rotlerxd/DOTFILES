@@ -1,0 +1,66 @@
+2024-03-06 21:25:38.282 [info] Log level: Info
+2024-03-06 21:25:38.282 [info] Validating found git in: "git"
+2024-03-06 21:25:38.282 [info] Using git "2.44.0" from "git"
+2024-03-06 21:25:38.282 [info] > git rev-parse --show-toplevel [11ms]
+2024-03-06 21:25:38.282 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.282 [info] > git rev-parse --show-toplevel [6ms]
+2024-03-06 21:25:38.282 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.283 [info] > git rev-parse --show-toplevel [50ms]
+2024-03-06 21:25:38.284 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.311 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-06 21:25:38.311 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.322 [info] > git rev-parse --show-toplevel [1ms]
+2024-03-06 21:25:38.322 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.341 [info] > git rev-parse --show-toplevel [1ms]
+2024-03-06 21:25:38.341 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.351 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-06 21:25:38.351 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.364 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-06 21:25:38.364 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.377 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-06 21:25:38.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.400 [info] > git rev-parse --show-toplevel [12ms]
+2024-03-06 21:25:38.400 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.415 [info] > git rev-parse --show-toplevel [1ms]
+2024-03-06 21:25:38.415 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.433 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-06 21:25:38.433 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.452 [info] > git rev-parse --show-toplevel [1ms]
+2024-03-06 21:25:38.452 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.465 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-06 21:25:38.465 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.479 [info] > git rev-parse --show-toplevel [3ms]
+2024-03-06 21:25:38.499 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-03-06 21:25:38.517 [info] Open repository: /home/rotler/.config/nvim
+2024-03-06 21:25:38.544 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-06 21:25:38.544 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.545 [info] > git config --get commit.template [12ms]
+2024-03-06 21:25:38.581 [info] > git rev-parse --show-toplevel [19ms]
+2024-03-06 21:25:38.581 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.593 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/v2.0 refs/remotes/v2.0 [15ms]
+2024-03-06 21:25:38.603 [warning] ENOENT: no such file or directory, open '/home/rotler/.config/nvim/.git/refs/remotes/origin/v2.0'
+2024-03-06 21:25:38.604 [info] > git rev-parse --show-toplevel [12ms]
+2024-03-06 21:25:38.604 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.613 [info] > git rev-parse refs/remotes/origin/v2.0 [10ms]
+2024-03-06 21:25:38.623 [info] > git rev-parse --show-toplevel [12ms]
+2024-03-06 21:25:38.623 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.631 [info] > git status -z -uall [9ms]
+2024-03-06 21:25:38.659 [info] > git rev-parse --show-toplevel [29ms]
+2024-03-06 21:25:38.659 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.670 [info] > git config --get commit.template [11ms]
+2024-03-06 21:25:38.673 [info] > git rev-parse --show-toplevel [4ms]
+2024-03-06 21:25:38.673 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.693 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/v2.0 refs/remotes/v2.0 [11ms]
+2024-03-06 21:25:38.736 [warning] ENOENT: no such file or directory, open '/home/rotler/.config/nvim/.git/refs/remotes/origin/v2.0'
+2024-03-06 21:25:38.737 [info] > git rev-parse --show-toplevel [44ms]
+2024-03-06 21:25:38.737 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.752 [info] > git rev-parse refs/remotes/origin/v2.0 [17ms]
+2024-03-06 21:25:38.775 [info] > git status -z -uall [7ms]
+2024-03-06 21:25:38.781 [info] > git rev-parse --show-toplevel [30ms]
+2024-03-06 21:25:38.781 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.792 [info] > git rev-parse --show-toplevel [3ms]
+2024-03-06 21:25:38.792 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:38.806 [info] > git rev-parse --show-toplevel [3ms]
+2024-03-06 21:25:38.806 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-03-06 21:25:39.124 [info] > git rev-parse --show-toplevel [1ms]
+2024-03-06 21:25:39.124 [info] fatal: not a git repository (or any of the parent directories): .git

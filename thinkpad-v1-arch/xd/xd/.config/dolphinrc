@@ -1,0 +1,30 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[ContentDisplay]
+DirectorySizeCount=false
+UseShortRelativeDates=false
+
+[General]
+Version=202
+ViewPropsTimestamp=2024,3,6,14,54,12.839
+
+[IconsMode]
+PreviewSize=256
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+2560x1440 screen: Height=442
+2560x1440 screen: Width=423
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,cursorthumbnail,audiothumbnail,djvuthumbnail,directorythumbnail,kraorathumbnail,opendocumentthumbnail,windowsexethumbnail,imagethumbnail,windowsimagethumbnail,exrthumbnail,jpegthumbnail,svgthumbnail,comicbookthumbnail,ebookthumbnail

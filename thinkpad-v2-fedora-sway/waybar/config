@@ -1,0 +1,132 @@
+// Global 
+{
+    "layer": "top",
+    "position": "top",
+    "margin": 4,
+    "height": 30, // Waybar height (to be removed for auto height)
+
+
+    "modules-left": [
+        "sway/workspaces",
+        "sway/window"
+    ],
+ 
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "custom/xd",
+        "memory",
+        "cpu",
+        "pulseaudio",
+        "network",
+        "battery",
+        "tray"
+    ],
+
+    // Module
+    "battery": {
+        "states": {
+            "critical": 15
+        },
+        "format": " {capacity}% {icon}  ",
+        "format-charging": " {capacity}% 󰂄 ",
+        "format-plugged": " {capacity}%  ",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "clock": {
+        "format": " {:%H:%M} ",
+        "tooltip-format": "{:%e %B %Y}"
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": "   {usage}% ", // Icon: microchip
+        "states": {
+            "critical": 90
+        },
+        "on-click": "kitty -e 'htop'"
+    },
+
+    "memory": {
+        "interval": 2,
+        "format": "   {}% ", // Icon: memory
+        "on-click": "kitty -e 'htop'", 
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "network": {
+        "interval": 5,
+        "format-wifi": " ", // Icon: wifi
+        "format-ethernet": " ", // Icon: ethernet
+        "format-disconnected": " ⚠  Disconnected ",
+        "tooltip-format": " {ifname}: {ipaddr} ",
+        "on-click": "nm-connection-editor"
+    },
+
+    "network#vpn": {
+        "interface": "tun0",
+        "format": " ",
+        "format-disconnected": " ⚠  Disconnected ",
+        "tooltip-format": " {ifname}: {ipaddr}/{cidr} "
+    },
+
+    "sway/mode": {
+        "format": "{}",
+        "tooltip": false
+    },
+
+    "sway/window": {
+        "format": " {} ",
+        "max-length": 120
+    },
+
+    "sway/workspaces": {
+        "disable-scroll": true
+    },
+
+    "pulseaudio": {
+        "scroll-step": 1, // %, can be a float
+        "format": " {icon} {volume}% ",
+        "format-bluetooth": " {volume}% {icon}  {format_source} ",
+        "format-bluetooth-muted": "  {icon}  {format_source} ",
+        "format-muted": " 󰸈 ",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "וֹ",
+            "headset": "  ",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [""]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
+    },
+
+    // to use the weather module replace <your_location> with your city or town
+    // note: do not use spaces: new york would be newyork
+
+    "tray": {
+        "icon-size": 18,
+        "spacing":10
+    },
+
+    "custom/xd": {
+        "format": "{}",
+        "interval": 10,
+        "max-length": 40,
+        "return-type": "json",
+        "exec": "bash ~/.config/waybar/mediaplayer.sh",
+        "exec-if": "pgrep spotify",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+}
